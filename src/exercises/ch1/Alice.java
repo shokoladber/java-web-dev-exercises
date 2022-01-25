@@ -1,6 +1,5 @@
-package exercises;
+package exercises.ch1;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Alice {
