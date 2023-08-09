@@ -1,5 +1,4 @@
-package org.launchcode.java.studios.areaofacircle;
-import java.lang.Math.*;
+package studios.areaofacircle;
 
 public class Circle {
 

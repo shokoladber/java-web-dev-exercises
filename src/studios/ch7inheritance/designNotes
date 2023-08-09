@@ -1,0 +1,73 @@
+Design Notes:
+
+Types of Questions:
+Multiple choice: a question with a fixed set of possible answers, of which only one may be chosen and only one answer is correct
+Checkbox: a question with a fixed set of possible answers, of which any number may be chosen; there is one correct combination of choices
+True/False: a question that has a true/false answer
+
+Design Considerations:
+1. What do these types of questions have in common?
+
+needs user input -- could use letters to correspond to answers
+needs right answer(s)
+has multiple choices
+needs to display question
+needs to display answers
+needs to check correctness of user input
+
+
+2. What makes these question types different?
+
+multiple choice:
+more than 2 choices, 1 answer
+could be string or button input
+
+checkbox:
+more than 2 choices, could be more than 1 answer
+button input only
+
+true/false:
+only 2 choices (binary)
+could be string input or button input
+
+
+
+Program Design:
+
+Question - abstract class
+
+fields:
+string name
+string question
+hashMap letters/choices
+
+methods:
+displayQuestion
+
+
+MultipleChoice - child of Question
+
+fields:
+string name
+string question
+string userInput
+
+methods:
+
+CheckBox - child of Question
+
+fields:
+string name
+string question
+string userInput
+
+methods:
+
+TrueFalse - child of Question
+
+fields:
+string name
+string question
+string userInput
+
+methods:
